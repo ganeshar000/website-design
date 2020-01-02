@@ -1,0 +1,157 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+ body,
+ h1,
+ h2 {
+   font-family: "Raleway", sans-serif
+ }
+
+ body,
+ html {
+   height: 100%
+ }
+
+ p {
+   line-height: 2
+ }
+
+ .bgimg,
+ .bgimg2 {
+   min-height: 100%;
+   background-position: center;
+   background-size: cover;
+ }
+
+div.indent{
+text-indent: 50px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+</style>
+</head>
+
+<!-- body -->
+<div style="background-image: linear-gradient(#d1ffd5, #67d676);">
+
+
+
+
+   
+   <!-- Navbar -->
+ <div class="w3-top w3-hide-small " style="background-color:#67d676">
+   <div class="w3-bar w3-center w3-padding w3-opacity-min ">
+ 	<a href="#home" style="width:20%" class="w3-bar-item w3-button w3-hover-black">Home</a>
+
+ 	<a href="#dress" style="width:20%" class="w3-bar-item w3-button w3-hover-pale-green">Solar</a>
+
+ 	<a href="#food" style="width:20%" class="w3-bar-item w3-button w3-hover-pale-green">Geothermal Heating and Cooling</a>
+
+ 	<a href="#transportation" style="width:20%" class="w3-bar-item w3-button w3-hover-pale-green">Hydroponics</a>
+
+ 	<a href="webpage" style="width:20%" class="w3-bar-item w3-button w3-hover-pale-green">Earthship Bombcenter</a>
+   </div>
+ </div>
+
+<div class="w3-display-top w3-margin-top w3-text-black w3-center " style="padding-top:5%">
+ 	<h1 class="w3-jumbo-bold"><u>Earthship Bioshelter</u></h1>
+</div>
+
+<img  src="http://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Exterior_Jacobsen_House_Earthship_2009.JPG/800px-Exterior_Jacobsen_House_Earthship_2009.JPG" class="center">
+<br>
+<div class="w3-container" style="text-intent:5%; margin-left:2%; margin-right:2%; ">
+&nbsp &nbsp &nbsp &nbsp &nbsp Introduced in the 1970s, the Earthship Bioshelter concept uses a variety of materials such as waste tires, glass bottles and cans to minimally impact the environment. They can be found all over the world and in the U.S. Often off the grid, this option is the most drastic of any since it requires the most innovation, planning and dedication. It also combines many of the other options we have listed on our site for you to explore. However, if done properly, earthship Bioshelters can be aesthetically pleasing and very eco-friendly. They usually rise out of the earth and can be made to make its own water, heating and cooling systems. Exterior walls are usually constructed of earth filled tires to regulate temperature while interior walls constructed of honeycomb of empty cans/glass bottles to be artistically beautiful. To see examples, click <a href="http://environment-ecology.com/environment-and-architecture/375-what-is-earthship.html">here</a>.
+</div>
+
+<br>
+
+<div class="w3-row w3-container">
+<!-- Start Row -->
+	<div class="w3-half" style="">
+  	<h2 class="w3-center"><b>Pros</b></h2>
+ 	<ul>   
+	<li><h4><i>Environmentally conscious</h4></i>
+
+	<p class="tab">&nbsp &nbsp &nbsp &nbsp &nbsp You will use <b>public utilities and fossil fuels less</b> as well as be <b>energy efficient</b> through solar/geothermal heating and cooling, natural light, and recycling. You will be mostly <b>self sustainable</b> since you can grow food, use/reuse water, and try rain/greywater harvesting. You may even be <b>paid to take away materials</b> that might otherwise be burned illegally!
+	<li><h4><i>Innovation</i></h4>
+	<p class="tab">&nbsp &nbsp &nbsp &nbsp &nbsp You can be creative and make this Earthship Bioshelter to <b>fit your needs</b> and wants for a dwelling.</dd>
+    	</ul>
+	</div>
+<!-- End row -->
+<!-- Start row -->
+	<div class="w3-half w3-container" style="border-left: 1px solid black">
+  	<h2 class="w3-center "><b>Cons</b></h2>
+  	<ul>
+ 	 
+  	<li><h4><i>You may encounter problems</h4></i>
+  	<p class="tab">&nbsp &nbsp &nbsp &nbsp &nbsp There types of <b>dwellings don’t work well in all climates</b>. Roofs can leak and there are sometimes humidity issues. In general, they might not work as intended, especially if not designed well. You may also need to use food outside of what you produce in your bioshelter. <b>Bugs</b> can be another problem.
+ 	 
+  	<li><h4><i>Health related concerns</h4></i>
+  	<p class="tab">&nbsp &nbsp &nbsp &nbsp &nbsp ½ of <b>design is often concrete</b> (which isn’t natural) and this negatively affects breathing if it removes oxygen from air. The gas released by tires is not good for you, and mold can grow easily in some models.
+ 	 
+  	<li><h4><i>Time & Money</h4></i>
+  	<p class="tab">&nbsp &nbsp &nbsp &nbsp &nbsp It takes a <b>lot of time to collect</b> all recycled materials, it’s not very cheap to make or fix, and it can take 3 or more years to sell. <b>Insurance</b> is also sometimes hard to get.</dd>
+    	</ul>
+	</div><!-- End row -->
+  </div>
+<div style="margin-left:5%">
+<div class="w3-container w3-large">Still Interested?</div>
+<div class="w3-container">&nbsp &nbsp &nbsp &nbsp &nbsp Learn more about the pros and cons <a href="https://archinia.com/earthships/earthship-pros-cons">here</a>.</div>
+<div class="w3-container">&nbsp &nbsp &nbsp &nbsp &nbsp Learn more in depth facts <a href="http://hackingtheearthship.blogspot.com/2015/01/tires-and-offgassing-issue.html">here</a>.</div>
+</div>
+<br>
+
+<!-- cost section -->
+<div class="w3-container" style=" margin-left:2%" id="cost">
+<h2 class="w3-center">Cost</h2>
+<div>&nbsp &nbsp &nbsp &nbsp &nbsp One of the easiest ways to make an Earthship Bioshelter is to have the Earthship Biotecture company build it for you. This would cost $225/square foot, and sustainable construction might only take a few months. Visit their site <a href="https://www.earthshipglobal.com">here</a>.</div>
+<div>&nbsp &nbsp &nbsp &nbsp &nbsp You can also build one on your own,* though it could take up to 2 years. But, don’t be discouraged! A couple in Ontario only paid $55,000 for 2,900 square feet since they did a majority of the work themselves, and they have no electric bills! Get inspired by reading about it <a href="https://www.theglobeandmail.com/life/home-and-garden/the-55k-2900-square-foot-eco-friendly-home-with-no-electricity-bills/article4602606/">here</a>.</div>
+<div>*(Please note that if you are not particularly healthy or strong, this process may be too strenuous for you to do on your own).
+</div>
+<br>
+</div>
+<br>
+
+<!-- tips section -->
+<div class="w3-container" id="tips">
+<h2 class="w3-center">Tips and Helpful Information</h2>
+<div class="w3-container" style="margin-left:2%; margin-right:1%;">
+<!-- start table -->
+<dl>
+<dt>Get a passive solar designer or architect to help you make the best model for your region:</dt>
+<dd>This will ensure that you utilize all the natural phenomenons around you while minimizing cost and effort.</dd>
+<dt>Catch water from a local environment:</dt>
+<dd>While you can do gray water harvesting, you can’t actually drink that water. You’ll need to see what other options are available near you for drinking water. To learn more about grey water harvesting and what it is used for, click <a href="http://environment-ecology.com/environment-and-architecture/375-what-is-earthship.html">here</a>.</dd>
+<dt>Make sure your home has the correct orientation and doesn’t have certain features:</dt>
+<dd>This could be things such as sloping window walls. To find out more or to understand why, click <a href="https://archinia.com/earthships/solving-earthship-enigma">here</a>.</dd>
+<dt>Use wind energy:</dt>
+<dd>It can be an electricity source.</dd>
+<dt>Use solar energy:</dt>
+<dd>It can be a source for heating.</dd>
+<dl>
+</div>
+<!-- end table -->
+</div>
+
+
+</div>
+</html>
+
+
+
+
+
+
+
+
