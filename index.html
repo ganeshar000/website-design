@@ -1,76 +1,531 @@
-<!DOCTYPE html>
+
+<!-- DOCTYPE html -->
 <html>
-<title>Homepage</title>
+<head>
+<title>BPA Nationals 2020</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-  .bgimg {
-  background-image: url('http://www.ecofriendlyhouses.net/uploads/images/house1.jpg');
-  min-height: 100%;
-  background-position: center;
-  background-size: cover;
+ body,
+ h1,
+ h2 {
+   font-family: "Raleway", sans-serif
+ }
+
+ body,
+ html {
+   height: 100%
+ }
+
+ p {
+   line-height: 2
+ }
+img {
+  width: 100%;
+  height: auto;
 }
-body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
-body {font-size: 16px;}
-img {margin-bottom: -8px;}
-.mySlides {display: none;}
+
+ .bgimg,
+ .bgimg2 {
+   min-height: 100%;
+   background-position: center;
+   background-size: cover;
+ }
+
+ .bgimg {
+   background-image: url("https://wallpaperplay.com/walls/full/1/5/0/195970.jpg");
+ }
+ .zoom {
+  transition: transform .2s; /* Animation */
+}
+
+.zoom:hover {
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.w3-half img{margin-bottom: -6px; opacity: 0.8; cursor: pointer}
+.w3-half img:hover{opacity: 1}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.containerbar {
+	width=100%;
+	height:100%;
+	margin:0;
+	padding:0;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: light-grey;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.slidetext {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #000000;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
 </style>
-<body class="w3-content w3-black" style="max-width:1500px;">
-<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-  <div class="w3-display-topleft w3-padding-large w3-xlarge">
-    Logo
+<script>
+
+</script>
+</head>
+<body>
+
+ <!-- Header / Home-->
+ <header class="w3-display-container w3-wide bgimg w3-grayscale-min" id="home">
+
+   <a href="https://bpa.org/"><img src="https://bpanational.wpengine.com/wp-content/uploads/2018/09/business-professionals-of-america-bpa-logo-1000px.png"
+     style="float:right;width:10%;float:top; padding-top:1%"> </a>
+
+   <div class="w3-display-middle w3-text-white w3-center">
+     <h1 class="w3-jumbo-bold">Ecofriendly Life</h1>
+     <div><style="center" ><a href="#quiz"><i>Find the perfect home for you!</i></a>
+     </div>
+   </div>
+   
+   
+   <div style="position: absolute; bottom: 55px; right: 5px;"><a href="#models "><img style="float:right;Width:50px;Height:50px" href="#models" src="https://www.freeiconspng.com/uploads/white-down-arrow-png-2.png"></a>></div>
+ </header>
+
+
+ <!-- Grid for Models -->
+ <!-- first row -->
+ <div class="w3-row w3-center w3-pale-yellow" id="models">
+    <div class="w3-half zoom container" style="width:50%">
+      <img src="https://www.publicdomainpictures.net/pictures/270000/nahled/hydroponic-farm-1531761834v1g.jpg" style="width:100% w3-hover-light-grey" onclick="onClick(this)" alt="A boy surrounded by beautiful nature">
+    <div class="centered w3-border w3-round w3-black">Hydroponics</div>
+	</div>
+	<div class="w3-half zoom container">
+	<img src="https://img5.goodfon.com/wallpaper/nbig/f/7d/solar-panel-solar-energy-sun-sunset.jpg" style="width:100% w3-hover-light-grey" onclick="onClick(this)" alt="What a beautiful scenery this sunset">
+    <div class="centered w3-border w3-black">Solar</div>
+	</div>
+</div>
+<!-- second row -->
+<div class="w3-row w3-center w3-pale-yellow" >
+
+    <div class="w3-half zoom container">
+      <img src="https://c1.wallpaperflare.com/preview/986/63/650/marijuana-cannabis-medical-marijuana-weed.jpg" style="width:100% w3-hover-light-grey" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+      <div class="centered w3-border w3-round w3-black">Earthship Bombshelter</div>
+	  </div>
+	  
+	  <div class="w3-half zoom container ">
+	  <img src="https://wallpaperaccess.com/full/139406.jpg" style="width:100% w3-hover-light-grey" onclick="onClick(this)" alt="Waiting for the bus in the desert">
+    <div class="centered w3-border w3-round w3-black">Geothermal Heating and Cooling</div>
+	</div>
   </div>
-  <div class="w3-display-middle">
-    <h1 class="w3-jumbo w3-animate-top">COMING SOON</h1>
-    <hr class="w3-border-grey" style="margin:auto;width:40%">
-    <p class="w3-large w3-center">35 days left</p>
+  <!-- third row -->
+  <div class="w3-row w3-center w3-pale-yellow" >
+
+    <div class="w3-half zoom container">
+      <img src="https://images2.alphacoders.com/598/598441.jpg" style="width:100% w3-hover-light-grey" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+      <div class="centered w3-border w3-round w3-black">Wind Energy</div>
+	  </div>
+	  
+	  <div class="w3-half zoom container ">
+	  <img src="https://cache.desktopnexus.com/thumbseg/830/830347-bigthumbnail.jpg" style="width:100% w3-hover-light-grey" onclick="onClick(this)" alt="Waiting for the bus in the desert">
+    <div class="centered w3-border w3-round w3-black">Roof Garden</div>
+	</div>
+   
   </div>
-  <div class="w3-display-bottomleft w3-padding-large">
   
-    Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+  
+  
+   <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+	<div class="w3-half">
+      <img id="img01" class="w3-image">
+	</div>
+	<div class="w3-half">
+      <p id="caption"></p>
+	</div>
+    </div>
   </div>
+
+
+
+
+  
+  <!-- quiz section -->
+<div id="quiz">
+<div class="slideshow-container">
+<br>
+<br>
+<br>
+<div class="mySlides fade">
+  <div class="numbertext">1 / 7</div>
+<div class="w3-row w3-center w3-large">
+How much sunlight does a typical day in your location have?
+</div>
+<div class="w3-row">
+<div class="w3-row w3-center"> <button onclick="addsolar(); plusSlides(1);" class="w3-button w3-green">A Lot</button> </div>
+<div class="w3-row w3-center"> <button onclick="addsolar(); plusSlides(1);" class="w3-button w3-blue">Some</button> </div>
+<div class="w3-row w3-center"> <button onclick="plusSlides(1);" class="w3-button w3-red">A Little</button> </div>
+<div class="w3-row w3-center"> <button onclick="plusSlides(1);" class="w3-button w3-orange">None</button> </div>
+</div>
 </div>
 
-<!-- Header with Slideshow -->
-<header class="w3-display-container w3-center">
-  <button class="w3-button w3-block w3-green w3-hide-large w3-hide-medium" onclick="document.getElementById('download').style.display='block'">Download <i class="fa fa-android"></i> <i class="fa fa-apple"></i> <i class="fa fa-windows"></i></button>
-  <div class="mySlides w3-animate-opacity">
-    <img class="w3-image" src="https://aws.salterspiralstair.com/wp-content/uploads/2016/04/22212806/opening-image-1.jpg" alt="Image 1" style="min-width:500px" width="1500" height="1000">
-    <div class="w3-display-left w3-padding w3-hide-small" style="width:35%">
-      <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
-        <h1 class="w3-xlarge">Take photos with our app</h1>
-        <hr class="w3-opacity">
-        <p>Super simple installment: free of charge</p>
-        <p><button class="w3-button w3-block w3-green w3-round" onclick="document.getElementById('download').style.display='block'">Download <i class="fa fa-android"></i> <i class="fa fa-apple"></i> <i class="fa fa-windows"></i></button></p>
+<div class="mySlides fade">
+  <div class="numbertext">2 / 7</div>
+<div class="w3-row w3-center w3-large">
+Do you live in an urban or rural area? 
+</div>
+<div class="w3-row">
+<div class="w3-row w3-center"> <button onclick="addsolar(); addroof(); plusSlides(1);" class="w3-button w3-green">Urban</button> </div>
+<div class="w3-row w3-center"> <button onclick="addgeo(); addwind(); plusSlides(1);" class="w3-button w3-blue">Rural</button> </div>
+</div>
+</div>
+
+<div class="mySlides fade">
+<div class="numbertext">3 / 7</div>
+<div class="w3-row w3-center w3-large">
+What kind of house do you live in?
+</div>
+<div class="w3-row">
+<div class="w3-row w3-center"> <button onclick="plusSlides(1);" class="w3-button w3-green">Apartment/Flat</button> </div>
+<div class="w3-row w3-center"> <button onclick="addsolar(); addgeo(); plusSlides(1);" class="w3-button w3-blue">Single Family House</button> </div>
+<div class="w3-row w3-center"> <button onclick="addroof(); plusSlides(1);" class="w3-button w3-red">Townhome</button> </div>
+</div>
+</div>
+
+<div class="mySlides fade">
+<div class="numbertext">4 / 7</div>
+<div class="w3-row w3-center w3-large">
+Does your area get a lot of rain/snow throughout the year?
+</div>
+<div class="w3-row">
+<div class="w3-row w3-center"> <button onclick="minussolar(); plusSlides(1);" class="w3-button w3-green">A Lot</button> </div>
+<div class="w3-row w3-center"> <button onclick="plusSlides(1);" class="w3-button w3-blue">Some</button> </div>
+<div class="w3-row w3-center"> <button onclick="plusSlides(1);" class="w3-button w3-red">A Little</button> </div>
+<div class="w3-row w3-center"> <button onclick="addsolar(); plusSlides(1);" class="w3-button w3-orange">None</button> </div>
+</div>
+</div>
+
+<div class="mySlides fade">
+<div class="numbertext">5 / 7</div>
+<div class="w3-row w3-center w3-large">
+How much money do you think you can contribute to making your home more eco-friendly?
+</div>
+<div class="w3-row">
+<div class="w3-row w3-center"> <button onclick="addwind(); addwind(); addgeo(); addgeo(); addearth(); addearth(); plusSlides(1);" class="w3-button w3-green">>$15,001</button> </div>
+<div class="w3-row w3-center"> <button onclick="addsolar(); addsolar(); addwind(); addwind(); plusSlides(1);" class="w3-button w3-green">$10,001-$15,000</button> </div>
+<div class="w3-row w3-center"> <button onclick="addsolar(); addsolar(); plusSlides(1);" class="w3-button w3-blue">$5,001-$10,000</button> </div>
+<div class="w3-row w3-center"> <button onclick="plusSlides(1);" class="w3-button w3-red">$1,000-$5,000</button> </div>
+<div class="w3-row w3-center"> <button onclick="addhydro(); plusSlides(1);" class="w3-button w3-orange"><$1,000</button> </div>
+</div>
+</div>
+
+<div class="mySlides fade">
+<div class="numbertext">6 / 7</div>
+<div class="w3-row w3-center w3-large">
+Do you have an outdoor space like a balcony or yard? 
+</div>
+<div class="w3-row">
+<div class="w3-row w3-center"> <button onclick="addhydro(); addroof(); plusSlides(1); showResults();" class="w3-button w3-green">Yes</button> </div>
+<div class="w3-row w3-center"> <button onclick="plusSlides(1); showResults();" class="w3-button w3-blue">No</button> </div>
+</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">7 / 7</div>
+  <div class="w3-row w3-center w3-large"> <h3><i> Your Results </i></h3> </div>
+<div class="w3-row" id="containerbar" style="height: 370px; width: 100%;">
+</div>
+</div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+  <span class="dot" onclick="currentSlide(7)"></span>
+</div>
+<br>
+<br>
+<br>
+</div>
+
+   <!-- The Contact Section -->
+   <div class=w3-pale-green>
+  <div class="w3-container w3-content w3-padding-64 " style="max-width:800px" id="contact">
+    <h1 class="w3-wide w3-center">Contact Us</h1>
+    <p class="w3-opacity w3-center"><i>Qustions? Let us know!</i></p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i><a href="https://goo.gl/maps/VAp37HN73KWHpMDt5">Plymouth, MN US</a><br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: wayzatabpa@gmail.com<br>
+      </div>
+      <div class="w3-col m6">
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+        </form>
       </div>
     </div>
   </div>
-  <div class="mySlides w3-animate-opacity">
-    <img class="w3-image" src="/w3images/app2.jpg" alt="Image 2" style="min-width:500px" width="1500" height="1000">
-    <div class="w3-display-left w3-padding w3-hide-small" style="width:35%">
-      <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
-        <h1 class="w3-xlarge w3-text-red"><b>CLICK!</b> Fast and Easy</h1>
-        <hr class="w3-opacity">
-        <p>Choose from thousands of features</p>
-        <p><button class="w3-button w3-block w3-red w3-round" onclick="document.getElementById('download').style.display='block'">Download <i class="fa fa-android"></i> <i class="fa fa-apple"></i> <i class="fa fa-windows"></i></button></p>
-      </div>
-    </div>
   </div>
-  <div class="mySlides w3-animate-opacity">
-    <img class="w3-image" src="/w3images/app4.jpg" alt="Image 3" style="min-width:500px" width="1500" height="1000">
-    <div class="w3-display-left w3-padding w3-hide-small" style="width:35%">
-      <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
-        <h1 class="w3-xlarge">Smart Design</h1>
-        <hr class="w3-opacity">
-        <p>Customize photos as you go</p>
-        <p><button class="w3-button w3-block w3-indigo w3-round" onclick="document.getElementById('download').style.display='block'">Download <i class="fa fa-android"></i> <i class="fa fa-apple"></i> <i class="fa fa-windows"></i></button></p>
-      </div>
-    </div>
-  </div>
-  <a class="w3-button w3-black w3-display-right w3-margin-right w3-round w3-hide-small w3-hover-light-grey" onclick="plusDivs(1)">Take Tour <i class="fa fa-angle-right"></i></a>
-  <a class="w3-button w3-block w3-black w3-hide-large w3-hide-medium" onclick="plusDivs(1)">Take Tour <i class="fa fa-angle-right"></i></a>
-</header>
+  
+
+
+ <!-- About Section -->
+ <div style="background-color:#ddffff" class="w3-container w3-padding-64" id="about">
+<div class="w3-center" style="margin-top:0%" ><h1>About Us</h1>
+</div>
+<div> About us: We are a group of students </div>
+<p>Mehul Maheshwari</p>
+<p>Harshil Ganesha</p>
+<p>Nisha Kimber</p>
+<p>Neha Bhatia</p>
+</div>
+
+
+
+
+ <!-- Footer -->
+ <footer class="w3-center w3-black w3-padding-16">
+   <p>
+     Created by: Harshil Ganesha Murthy, Mehul Maheshwari, Nisha Kimber, Neha Bhatia 
+     <br> Wayzata BPA, Wayzata High School, Plymouth, MN, 2020
+     <br><br>
+   </p>
+ </footer>
+ <div class="w3-hide-small" style="margin-bottom:32px"> </div>
+
+
+<script>
+var hydro=0;
+var geo=0;
+var wind=0;
+var earth=0;
+var roof=0;
+var solar=0;
+
+function addsolar(){
+solar++;
+}
+
+function minussolar(){
+solar--;
+}
+
+function addhydro(){
+hydro++;
+}
+
+function addgeo(){
+geo++;
+}
+
+function addwind(){
+wind++;
+}
+
+function addroof(){
+roof++;
+}
+
+function addearth(){
+earth++;
+}
+
+
+
+function insertText(){
+document.getElementById("results").innerHTML = solar;
+}
+
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+function showResults() {
+	
+var chart = new CanvasJS.Chart("containerbar", {
+	animationEnabled: true,
+	
+	axisX:{
+		interval: 1
+	},
+	axisY2:{
+		interlacedColor: "rgba(1,77,101,.2)",
+		gridColor: "rgba(1,77,101,.1)",
+		interval: 1
+		
+	},
+	data: [{
+		type: "bar",
+		name: "companies",
+		axisYType: "secondary",
+		color: "#014D65",
+		dataPoints: [
+			{ y: solar, label: "Solar Energy" },
+			{ y: wind, label: "Wind Energy" },
+			{ y: earth, label: "Earthship Bomb Shelter" },
+			{ y: geo, label: "Geothermal" },
+			{ y: roof, label: "Roof Garden" },
+			{ y: hydro, label: "Hydroponics" },
+
+		]
+	}]
+});
+chart.render();
+}
+</script>
+</body>
+
 </html>
+
+
+
+
+
