@@ -1,0 +1,114 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+ body,
+ h1,
+ h2 {
+   font-family: "Raleway", sans-serif
+ }
+
+ body,
+ html {
+   height: 100%
+ }
+
+ p {
+   line-height: 2
+ }
+
+ .bgimg,
+ .bgimg2 {
+   min-height: 100%;
+   background-position: center;
+   background-size: cover;
+ }
+
+ .bgimg {
+   background-image: url("https://images.pexels.com/photos/67636/rose-blue-flower-rose-blooms-67636.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+ }
+</style>
+
+
+</head>
+<body>
+
+<div style="background-image: linear-gradient(#d8ffb8, #67c734);">
+<img src="https://zinco-greenroof.com/sites/default/files/styles/flexslider_full/public/2019-08/dachgarten3.jpg?itok=7XWLADPJ" style="width:100%; height:70%;">
+<div class="w3-display-top w3-margin-top w3-text-black w3-center " style="padding-top:2%">
+ 	<h1 class="w3-jumbo-bold"><u>Roof Garden</u></h1>
+</div>
+   
+   
+ <div class="w3-top w3-hide-small " style="background-color: #67c734">
+   <div class="w3-bar w3-center w3-padding w3-opacity-min ">
+
+
+	
+	<a href="https://ganeshar000.github.io/website-design" style="width:11%" class="w3-bar-item w3-button w3-hover-black">Home</a>
+    <a href="https://ganeshar000.github.io/website-design/hydroponics" style="width:11%" class="w3-bar-item w3-button w3-hover-pale-blue">Hydroponics</a>
+	<a href="https://ganeshar000.github.io/website-design/solar" style="width:11%" class="w3-bar-item w3-button w3-hover-pale-blue">Solar</a>
+	<a href="https://ganeshar000.github.io/website-design/earthship" style="width:20%" class="w3-bar-item w3-button w3-hover-pale-blue">Earthship Bombcenter</a>
+    <a href="https://ganeshar000.github.io/website-design/geothermal" style="width:25%" class="w3-bar-item w3-button w3-hover-pale-blue">Geothermal Heating and Cooling</a>
+    <a href="https://ganeshar000.github.io/website-design/wind-energy" style="width:11%" class="w3-bar-item w3-button w3-hover-pale-blue">Wind Energy</a>
+	<a href="https://ganeshar000.github.io/website-design/roof-garden" style="width:11%" class="w3-bar-item w3-button w3-hover-pale-blue">Roof Garden</a>
+
+
+   </div>
+ </div>
+ 
+<br>
+
+
+<div style="padding-left:2%;padding-right:2%;">
+
+
+
+ <p>Are you the urban dweller who constantly dreams of growing their own fresh herbs and harvesting plump tomatoes, but don’t have the space to?<b> The rooftop garden</b> is a perfect solution for you! This method utilizes wasted space, while also adding a fun and decorative vibe! <a href = "https://www.bhg.com/gardening/landscaping-projects/landscape-basics/balcony-and-rooftop-gardening/?">Here</a> are some design ideas to get you started!
+<br>
+<p>There are two main types of gardens you could set up:
+
+<br><b><i><u>1. Container Gardens: </i></b></u>
+   <ul style="line-height:200%">
+	<li><b>Easy to DIY!</b> Use anything from old Tupperware boxes to wooden baskets as planters! <a href ="https://www.pinterest.com/hometalk/container-gardening/">Click here</a> to see some fun ideas.
+	<li>Often <b>cost less, anywhere between $500-$1000</b> for installation and maintenance.For more budgeting tips, <a href="https://www.simple.com/blog/budget-to-build-and-maintain-an-urban-rooftop-garden">click here. </a>
+	<li>When considering what fits your space and budget the best, <b>check out your local gardening center</b> first. Chances are, they have pre-made planters and can advise you on specifics like location, installations and free design tips!  Click here to learn more about space and other installation conditions.
+
+ </ul>
+
+<br><b><i><u>2. Green Roof Gardens: </i></b></u>
+   <ul style="line-height:200%">
+	<li>For the gardener willing to go all out, consider the green roof garden. It is a more complex layout for gardening which <b>involves converting the entire rooftop into a structural system</b> which can support plant insulation, drainage and plant growth mediums.
+	<li>Always <b>contact a licensed professional to check out the structural integrity of your building</b> first, and get the green signal to go green! Check out <a href ="https://www.gardeningknowhow.com/special/urban/gardening-laws.htm">this website</a> for more information on gardening laws and licenses you might require before implementing green roofs.
+	<li>Green roof gardens cost anywhere from <b>$30 per sq.ft. to $200 per sq.ft</b>, but if installed properly, can <b>enhance the lifespan of a conventional roof by almost 20 years!</b> Want more information on costs? <a href ="https://www.doityourself.com/stry/estimating-the-cost-of-a-rooftop-garden">Click here</a> to find out.
+
+   </ul>
+<br>
+<p><b><i>Some advantages of maintaining a roof garden in your home:</b></i>
+<ul style="line-height:200%">
+<li>It reduces carbon dioxide emission while increasing oxygen levels.
+<li>It reduces heat emission in the building, lowering energy costs.
+<li>It conserves water by capturing and harvesting rainwater and also by preventing stormwater runoff.
+</ul>
+
+
+
+</div>
+
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
