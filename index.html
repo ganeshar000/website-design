@@ -195,24 +195,24 @@ img {vertical-align: middle;}
  <!-- first row -->
  <div class="w3-row w3-center w3-pale-yellow" id="models">
     <div class="w3-half zoom container" style="width:50%">
-      <img src="https://www.publicdomainpictures.net/pictures/270000/nahled/hydroponic-farm-1531761834v1g.jpg" style="width:100% w3-hover-light-grey" onclick="onClick(this)" alt="A boy surrounded by beautiful nature">
+      <img src="https://www.publicdomainpictures.net/pictures/270000/nahled/hydroponic-farm-1531761834v1g.jpg" style="width:100% w3-hover-light-grey" onclick="onClickHydro(this)">
     <div class="centered w3-border w3-round w3-black">Hydroponics</div>
 	</div>
-	<div class="w3-half zoom container">
-	<img src="https://img5.goodfon.com/wallpaper/nbig/f/7d/solar-panel-solar-energy-sun-sunset.jpg" style="width:100% w3-hover-light-grey" onclick="onClick(this)" alt="What a beautiful scenery this sunset">
-    <div class="centered w3-border w3-black">Solar</div>
+	<div class="w3-half  zoom container">
+	<img src="https://www.thehindu.com/migration_catalog/article10432701.ece/alternates/FREE_615/SOLAR_POWER" style="width:100% w3-hover-light-grey" onclick="onClickSolar(this)">
+    <div class="centered w3-round w3-border w3-black">Solar</div>
 	</div>
 </div>
 <!-- second row -->
 <div class="w3-row w3-center w3-pale-yellow" >
 
     <div class="w3-half zoom container">
-      <img src="https://c1.wallpaperflare.com/preview/986/63/650/marijuana-cannabis-medical-marijuana-weed.jpg" style="width:100% w3-hover-light-grey" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+      <img src="https://c1.wallpaperflare.com/preview/986/63/650/marijuana-cannabis-medical-marijuana-weed.jpg" style="width:100% w3-hover-light-grey" onclick="onClickEarth(this)">
       <div class="centered w3-border w3-round w3-black">Earthship Bombshelter</div>
 	  </div>
 	  
 	  <div class="w3-half zoom container ">
-	  <img src="https://wallpaperaccess.com/full/139406.jpg" style="width:100% w3-hover-light-grey" onclick="onClick(this)" alt="Waiting for the bus in the desert">
+	  <img src="https://wallpaperaccess.com/full/139406.jpg" style="width:100% w3-hover-light-grey" onclick="onClickGeo(this)">
     <div class="centered w3-border w3-round w3-black">Geothermal Heating and Cooling</div>
 	</div>
   </div>
@@ -220,12 +220,12 @@ img {vertical-align: middle;}
   <div class="w3-row w3-center w3-pale-yellow" >
 
     <div class="w3-half zoom container">
-      <img src="https://images2.alphacoders.com/598/598441.jpg" style="width:100% w3-hover-light-grey" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+      <img src="http://www.chinadaily.com.cn/bizchina/images/attachement/jpg/site1/20090630/0022190fd2dc0bb3a96314.jpg" style="width:100% w3-hover-light-grey" onclick="onClickWind(this)">
       <div class="centered w3-border w3-round w3-black">Wind Energy</div>
 	  </div>
 	  
 	  <div class="w3-half zoom container ">
-	  <img src="https://cache.desktopnexus.com/thumbseg/830/830347-bigthumbnail.jpg" style="width:100% w3-hover-light-grey" onclick="onClick(this)" alt="Waiting for the bus in the desert">
+	  <img src="https://cache.desktopnexus.com/thumbseg/830/830347-bigthumbnail.jpg" style="width:100% w3-hover-light-grey" onclick="onClickRoof(this)">
     <div class="centered w3-border w3-round w3-black">Roof Garden</div>
 	</div>
    
@@ -252,6 +252,8 @@ img {vertical-align: middle;}
   <!-- quiz section -->
 <div id="quiz">
 <div class="slideshow-container">
+<br>
+<div class="w3-center w3-xxlarge" >Quiz</div>
 <br>
 <br>
 <br>
@@ -455,11 +457,43 @@ function insertText(){
 document.getElementById("results").innerHTML = solar;
 }
 
-function onClick(element) {
+function onClickHydro(element) {
   document.getElementById("img01").src = element.src;
   document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
+  var captionText=document.getElementById("caption");
+  captionText.innerHTML = "<div> Text <a href=''>For more info</a></div>";
+}
+function onClickSolar(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText=document.getElementById("caption");
+  captionText.innerHTML = "<div> Text2 <a href=''>For more info</a></div>";
+}
+function onClickEarth(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText=document.getElementById("caption");
+  captionText.innerHTML = "<div> Text3 <a href=''>For more info</a></div>";
+}
+function onClickGeo(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText=document.getElementById("caption");
+  captionText.innerHTML = "<div> Text4 <a href=''>For more info</a></div>";
+}
+
+function onClickWind(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText=document.getElementById("caption");
+  captionText.innerHTML = "<div> Text5 <a href=''>For more info</a></div>";
+}
+
+function onClickRoof(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText=document.getElementById("caption");
+  captionText.innerHTML = "<div> Text6 <a href=''>For more info</a></div>";
 }
 
 var slideIndex = 1;
@@ -524,6 +558,10 @@ chart.render();
 </body>
 
 </html>
+
+
+
+
 
 
 
