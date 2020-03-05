@@ -18,6 +18,7 @@
  body,
  html {
    height: 100%
+   scroll-behavior: smooth;
  }
 
  p {
@@ -43,11 +44,14 @@ img {
 }
 
 .zoom:hover {
+
   transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
-.w3-half img{margin-bottom: -6px; opacity: 0.8; cursor: pointer}
-.w3-half img:hover{opacity: 1}
+.w3-half img{margin-bottom: -6px; opacity: .8; cursor: pointer;}
+.w3-half img:hover{opacity: 1;}
+
+.frontback img{z-index:-1; postion: relative;}
 
 .container {
   position: relative;
@@ -167,9 +171,74 @@ img {vertical-align: middle;}
   .prev, .next,.text {font-size: 11px}
 }
 
-</style>
-<script>
+.navbar {
 
+}
+
+.arrow{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.arrow span{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 5px solid #06ff0a;
+    border-right: 5px solid #06ff0a;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+.arrow span:nth-child(2){
+    animation-delay: -0.2s;
+}
+.arrow span:nth-child(3){
+    animation-delay: -0.4s;
+}
+@keyframes animate {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
+}
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
+<script>
+$(document).ready(function(){
+
+  $(".navbar").hide(); //Hide the navigation bar first
+
+    $(window).scroll(function () {  //Listen for the window's scroll event
+        if (isScrolledAfterElement("#content")) { //if it has scrolled beyond the #content elment
+            $('.navbar').fadeIn();  //Show the navigation bar
+        } else {
+            $('.navbar').fadeOut(); //Else hide it
+        }
+    });
+
+    //Function that returns true if the window has scrolled beyond the given element
+    function isScrolledAfterElement(elem) {
+        var $elem = $(elem);
+        var $window = $(window);
+
+        var docViewTop = $window.scrollTop();
+        var docViewBottom = docViewTop + $window.height();
+
+        var elemTop = $elem.offset().top;
+
+        return elemTop <= docViewBottom;
+    }
+});
 </script>
 </head>
 <body>
@@ -185,28 +254,51 @@ img {vertical-align: middle;}
      <div><style="center" ><a href="#quiz"><i>Find the perfect home for you!</i></a>
      </div>
    </div>
-   
-   
-   <div style="position: absolute; bottom: 55px; right: 5px;"><a href="#models "><img style="float:right;Width:50px;Height:50px" href="#models" src="https://www.freeiconspng.com/uploads/white-down-arrow-png-2.png"></a>></div>
+  
+   <a href="#models">
+ <div>
+  <div class="arrow" >
+                <span></span>
+                <span></span>
+                <span></span>
+</div>
+</div>
+</a>
+
  </header>
 
-
+<div class="navbar w3-top w3-hide-small" style="background-color:#f79602">
+   <div class="w3-bar w3-center w3-padding w3-opacity-min ">
+	 
+	<a href="https://ganeshar000.github.io/website-design" style="width:11%" class="w3-bar-item w3-button w3-hover-white">Home</a>
+	<a href="https://ganeshar000.github.io/website-design/hydroponics" style="width:11%" class="w3-bar-item w3-button w3-hover-yellow">Hydroponics</a>
+	<a href="https://ganeshar000.github.io/website-design/solar" style="width:11%" class="w3-bar-item w3-button w3-hover-yellow">Solar</a>
+	<a href="https://ganeshar000.github.io/website-design/earthship" style="width:20%" class="w3-bar-item w3-button w3-hover-yellow">Earthship Bombcenter</a>
+	<a href="https://ganeshar000.github.io/website-design/geothermal" style="width:25%" class="w3-bar-item w3-button w3-hover-yellow">Geothermal Heating and Cooling</a>
+	<a href="https://ganeshar000.github.io/website-design/wind-energy" style="width:11%" class="w3-bar-item w3-button w3-hover-yellow">Wind Energy</a>
+	<a href="https://ganeshar000.github.io/website-design/roof-garden" style="width:11%" class="w3-bar-item w3-button w3-hover-yellow">Roof Garden</a>
+	 
+   </div>
+ </div>
+ 
+ 
  <!-- Grid for Models -->
  <!-- first row -->
+ <div id="content">
  <div class="w3-row w3-center w3-pale-yellow" id="models">
-    <div class="w3-half zoom container" >
-      <a href="https://ganeshar000.github.io/website-design/hydroponics"><img src="https://i1.wp.com/orchardo.ru/wp-content/uploads/2016/03/actinidia-arguta-issai-175-200-cm-10-l-kiwi-arguta-issai-18172-2-615x460.jpg" style="width:100% w3-hover-light-grey" ></a>
+    <div class="w3-half zoom container " >
+      <a href="https://ganeshar000.github.io/website-design/hydroponics"><img src="https://www.publicdomainpictures.net/pictures/270000/nahled/hydroponic-farm-1531761834v1g.jpg" style="width:100% w3-hover-light-grey" ></a>
     <div class="centered w3-border w3-round w3-black">Hydroponics</div>
 	</div>
 	<div class="w3-half  zoom container">
-	<a href="https://ganeshar000.github.io/website-design/solar"><img src="https://www.thehindu.com/migration_catalog/article10432701.ece/alternates/FREE_615/SOLAR_POWER" style="width:100% w3-hover-light-grey" "></a>
+	<a href="https://ganeshar000.github.io/website-design/solar"><img src="https://www.thehindu.com/migration_catalog/article10432701.ece/alternates/FREE_615/SOLAR_POWER" style="width:100% w3-hover-light-grey"></a>
     <div class="centered w3-round w3-border w3-black">Solar</div>
 	</div>
 </div>
 <!-- second row -->
 <div class="w3-row w3-center w3-pale-yellow" >
 
-    <div class="w3-half zoom container">
+    <div class="w3-half zoom container ">
       <a href="https://ganeshar000.github.io/website-design/earthship"><img src="https://s3-us-west-2.amazonaws.com/pangeabuilders/wp-content/uploads/20190214102126/global-earthship-model.jpg
 " style="width:100% w3-hover-light-grey" )"></a>
       <div class="centered w3-border w3-round w3-black">Earthship Bioshelter</div>
@@ -265,10 +357,10 @@ How much sunlight does a typical day in your location have?
 </div>
 <div class="w3-row">
 <br>
-<div class="w3-row w3-center"> <button onclick="addsolar(); plusSlides(1);" class="w3-button w3-green">A Lot</button> </div>
-<div class="w3-row w3-center"> <button onclick="addsolar(); plusSlides(1);" class="w3-button w3-blue">Some</button> </div>
-<div class="w3-row w3-center"> <button onclick="plusSlides(1);" class="w3-button w3-red">A Little</button> </div>
-<div class="w3-row w3-center"> <button onclick="plusSlides(1);" class="w3-button w3-orange">None</button> </div>
+<div class="w3-row w3-center"> <button onclick="addsolar(); plusSlides(1);" class="w3-button w3-green" style="height: 5%; width: 15%;" >A Lot</button> </div>
+<div class="w3-row w3-center"> <button onclick="addsolar(); plusSlides(1);" class="w3-button w3-blue" style="height: 5%; width: 15%;">Some</button> </div>
+<div class="w3-row w3-center"> <button onclick="plusSlides(1);" class="w3-button w3-red" style="height: 5%; width: 15%;">A Little</button> </div>
+<div class="w3-row w3-center"> <button onclick="plusSlides(1);" class="w3-button w3-orange" style="height: 5%; width: 15%;">None</button> </div>
 </div>
 </div>
 
@@ -279,8 +371,8 @@ Do you live in an urban or rural area?
 </div>
 <div class="w3-row">
 <br>
-<div class="w3-row w3-center"> <button onclick="addsolar(); addroof(); plusSlides(1);" class="w3-button w3-green">Urban</button> </div>
-<div class="w3-row w3-center"> <button onclick="addgeo(); addwind(); plusSlides(1);" class="w3-button w3-blue">Rural</button> </div>
+<div class="w3-row w3-center"> <button onclick="addsolar(); addroof(); plusSlides(1);" class="w3-button w3-green" style="height: 5%; width: 15%;">Urban</button> </div>
+<div class="w3-row w3-center"> <button onclick="addgeo(); addwind(); plusSlides(1);" class="w3-button w3-blue" style="height: 5%; width: 15%;">Rural</button> </div>
 </div>
 </div>
 
@@ -291,9 +383,9 @@ What kind of house do you live in?
 </div>
 <div class="w3-row">
 <br>
-<div class="w3-row w3-center"> <button onclick="plusSlides(1);" class="w3-button w3-green">Apartment/Flat</button> </div>
-<div class="w3-row w3-center"> <button onclick="addsolar(); addgeo(); plusSlides(1);" class="w3-button w3-blue">Single Family House</button> </div>
-<div class="w3-row w3-center"> <button onclick="addroof(); plusSlides(1);" class="w3-button w3-red">Townhome</button> </div>
+<div class="w3-row w3-center"> <button onclick="plusSlides(1);" class="w3-button w3-green" style="height: 5%; width: 15%;">Apartment/Flat</button> </div>
+<div class="w3-row w3-center"> <button onclick="addsolar(); addgeo(); plusSlides(1);" class="w3-button w3-blue" style="height: 5%; width: 15%;">Single Family House</button> </div>
+<div class="w3-row w3-center"> <button onclick="addroof(); plusSlides(1);" class="w3-button w3-red" style="height: 5%; width: 15%;">Townhome</button> </div>
 </div>
 </div>
 
@@ -304,10 +396,10 @@ Does your area get a lot of rain/snow throughout the year?
 </div>
 <div class="w3-row">
 <br>
-<div class="w3-row w3-center"> <button onclick="minussolar(); plusSlides(1);" class="w3-button w3-green">A Lot</button> </div>
-<div class="w3-row w3-center"> <button onclick="plusSlides(1);" class="w3-button w3-blue">Some</button> </div>
-<div class="w3-row w3-center"> <button onclick="plusSlides(1);" class="w3-button w3-red">A Little</button> </div>
-<div class="w3-row w3-center"> <button onclick="addsolar(); plusSlides(1);" class="w3-button w3-orange">None</button> </div>
+<div class="w3-row w3-center"> <button onclick="minussolar(); plusSlides(1);" class="w3-button w3-green" style="height: 5%; width: 15%;">A Lot</button> </div>
+<div class="w3-row w3-center"> <button onclick="plusSlides(1);" class="w3-button w3-blue" style="height: 5%; width: 15%;">Some</button> </div>
+<div class="w3-row w3-center"> <button onclick="plusSlides(1);" class="w3-button w3-red" style="height: 5%; width: 15%;">A Little</button> </div>
+<div class="w3-row w3-center"> <button onclick="addsolar(); plusSlides(1);" class="w3-button w3-orange" style="height: 5%; width: 15%;">None</button> </div>
 </div>
 </div>
 
@@ -318,11 +410,11 @@ How much money do you think you can contribute to making your home more eco-frie
 </div>
 <div class="w3-row">
 <br>
-<div class="w3-row w3-center"> <button onclick="addwind(); addwind(); addgeo(); addgeo(); addearth(); addearth(); plusSlides(1);" class="w3-button w3-green">>$15,001</button> </div>
-<div class="w3-row w3-center"> <button onclick="addsolar(); addsolar(); addwind(); addwind(); plusSlides(1);" class="w3-button w3-green">$10,001-$15,000</button> </div>
-<div class="w3-row w3-center"> <button onclick="addsolar(); addsolar(); plusSlides(1);" class="w3-button w3-blue">$5,001-$10,000</button> </div>
-<div class="w3-row w3-center"> <button onclick="plusSlides(1);" class="w3-button w3-red">$1,000-$5,000</button> </div>
-<div class="w3-row w3-center"> <button onclick="addhydro(); plusSlides(1);" class="w3-button w3-orange"><$1,000</button> </div>
+<div class="w3-row w3-center"> <button onclick="addwind(); addwind(); addgeo(); addgeo(); addearth(); addearth(); plusSlides(1);" class="w3-button w3-green" style="height: 5%; width: 15%;">>$15,001</button> </div>
+<div class="w3-row w3-center"> <button onclick="addsolar(); addsolar(); addwind(); addwind(); plusSlides(1);" class="w3-button w3-green" style="height: 5%; width: 15%;">$10,001-$15,000</button> </div>
+<div class="w3-row w3-center"> <button onclick="addsolar(); addsolar(); plusSlides(1);" class="w3-button w3-blue" style="height: 5%; width: 15%;">$5,001-$10,000</button> </div>
+<div class="w3-row w3-center"> <button onclick="plusSlides(1);" class="w3-button w3-red" style="height: 5%; width: 15%;">$1,000-$5,000</button> </div>
+<div class="w3-row w3-center"> <button onclick="addhydro(); plusSlides(1);" class="w3-button w3-orange" style="height: 5%; width: 15%;"><$1,000</button> </div>
 </div>
 </div>
 
@@ -333,8 +425,8 @@ Do you have an outdoor space like a balcony or yard?
 </div>
 <div class="w3-row">
 <br>
-<div class="w3-row w3-center"> <button onclick="addhydro(); addroof(); plusSlides(1); showResults();" class="w3-button w3-green">Yes</button> </div>
-<div class="w3-row w3-center"> <button onclick="plusSlides(1); showResults();" class="w3-button w3-blue">No</button> </div>
+<div class="w3-row w3-center"> <button onclick="addhydro(); addroof(); plusSlides(1); showResults();" class="w3-button w3-green" style="height: 5%; width: 15%;">Yes</button> </div>
+<div class="w3-row w3-center"> <button onclick="plusSlides(1); showResults();" class="w3-button w3-blue" style="height: 5%; width: 15%;">No</button> </div>
 </div>
 </div>
 
@@ -404,8 +496,8 @@ Do you have an outdoor space like a balcony or yard?
    </p>
  </footer>
  <div class="w3-hide-small" style="margin-bottom:32px"> </div>
-
-
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>
 var hydro=0;
 var geo=0;
@@ -545,10 +637,44 @@ var chart = new CanvasJS.Chart("containerbar", {
 });
 chart.render();
 }
+
+
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
 </script>
 </body>
 
 </html>
+
+
+
+
+
+
+
+
 
 
 
