@@ -5,6 +5,8 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
+
 <style>
  body,
  h1,
@@ -41,6 +43,19 @@
 img.one {
    height: 50%;
 }
+.piccontainer {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+ .bottom-left {
+  font-family: 'Questrial', sans-serif;
+  font-size:40px; 
+  color:#DCDCDC;
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
 
 
  
@@ -48,13 +63,13 @@ img.one {
 
 </head>
 
-<div style="background-image: linear-gradient(#eafce3,#7dad6c);">
+<div >
 
+<div class="piccontainer">
 <img src ="https://www.waterfurnace.com/assets/images/aboutgeothermal/landing/a_aboutgeothermal_whygeo.jpg" style="width:100%;">
-<div class="w3-display-top w3-margin-top w3-text-black w3-center " style="padding-top:2%">
- 	<h1 class="w3-jumbo-bold"><u>Geothermal Heating and Cooling</u></h1>
+  <div class="bottom-left">Geothermal Heating and Cooling</div>
 </div>
-   
+
    
  <div class="w3-top w3-hide-small " style="background-color:#7dad6c">
    <div class="w3-bar w3-center w3-padding w3-opacity-min ">
@@ -69,9 +84,11 @@ img.one {
 
    </div>
  </div>
- 
-<br>
-
+	
+<table>
+<tr>
+<td width="3%" style="background-image: linear-gradient(#eafce3,#7dad6c);"></td>
+<td>
 <!--Main content page-->
 <!--universal padding, end div at the end of the page-->
 <div style="overflow-x:auto; padding-left:2%;padding-right:2%" >
@@ -143,8 +160,16 @@ img.one {
    
 </div>
 <!--end div (for uni padding)-->
+</td>
+<td width="3%" style="background-image: linear-gradient(#eafce3,#7dad6c);"></td>
+</tr>
+</table>
 </div>
 </html>
+
+
+
+
 
 
 
